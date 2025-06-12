@@ -52,6 +52,7 @@ endif()
 
 if (NOT TARGET tsl::robin_map)
     add_subdirectory(robin-map)
+    install(TARGETS robin_map EXPORT dynarmicTargets)
 endif()
 
 # xbyak
